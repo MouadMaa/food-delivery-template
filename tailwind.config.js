@@ -2,18 +2,18 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
 	purge: [],
-	darkMode: false, // or 'media' or 'class'
+	darkMode: 'class',
 	theme: {
 		extend: {},
 		fontFamily: {
 			body: [ 'Poppins', 'Helvetica', 'Arial', 'sans-serif' ],
 		},
 		fontSize: {
-			xs: '1.2rem',
-			sm: '1.4rem',
-			md: '1.6rem',
-			lg: '2rem',
-			xl: '2.4rem',
+			xs: '0.75rem',
+			sm: '0.875rem',
+			md: '1rem',
+			lg: '1.25rem',
+			xl: '1.5rem',
 		},
 		colors: {
 			transparent: 'transparent',
@@ -30,7 +30,15 @@ module.exports = {
 		},
 	},
 	variants: {
-		extend: {},
+		extend: {
+			ringWidth: [ 'focus-visible' ],
+			ringColor: [ 'focus-visible' ],
+			borderColor: [ 'focus-visible' ],
+		},
+		width: [ 'responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus' ],
+		backgroundColor: [ 'responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus', 'active' ],
+		textColor: [ 'responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus', 'active' ],
+		borderColor: [ 'responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus', 'active' ],
 	},
 	plugins: [],
 }
