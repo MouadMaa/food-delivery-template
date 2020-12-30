@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./compiled.css">
+  <title>Food Delivery</title>
+</head>
+
+<body class="font-body text-gray-700 dark:bg-gray-900 dark:text-gray-50">
+<header class="font-body text-gray-700 h-16 md:h-20 xl:h-24 px-4 md:px-8 flex items-center justify-between border-b-2 border-gray-200 dark:border-gray-600">
+  <div class="flex items-center justify-between w-full md:w-auto md:space-x-3">
+    <button class="w-10 md:w-16 h-10 flex items-center justify-center group border-2 border-gray-200 focus:border-4 focus:outline-none focus:border-gray-300 focus-visible:border-gray-300 focus-visible:ring-1 focus-visible:ring-gray-300 transition duration-300 rounded-2xl dark:border-gray-600 dark:focus:border-gray-500 dark:focus-visible:border-gray-500">
+      <div class="w-6 md:w-8 h-3 md:h-4 flex flex-col justify-between">
+        <div class="h-0.5 w-4 md:w-2/3 bg-gray-600 self-end rounded group-hover:w-full transition-all duration-300 dark:bg-gray-100"></div>
+        <div class="h-0.5 bg-gray-600 rounded dark:bg-gray-100"></div>
+        <div class="h-0.5 w-4 md:w-2/3 bg-gray-600 rounded group-hover:w-full transition-all duration-300 dark:bg-gray-100"></div>
+      </div>
+    </button>
+
+    <h1 class="text-lg md:text-xl font-semibold tracking-wide text-gray-600 cursor-pointer dark:text-gray-100">Food Delivery</h1>
+
+    <div class="relative md:hidden">
+      <button class="w-10 h-10 flex items-center justify-center group border-2 border-gray-200 focus:outline-none hover:border-4 hover:border-gray-300 focus-visible:border-gray-300 focus-visible:ring-1 focus-visible:ring-gray-300 transition duration-300 rounded-2xl dark:border-gray-600 dark:focus:border-gray-500 dark:focus-visible:border-gray-500">
+        <svg class="w-6 h-6 text-gray-600 stroke-current dark:text-gray-100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="11.579" cy="7.278" r="4.778" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path clip-rule="evenodd" d="M4 18.701a2.215 2.215 0 01.22-.97c.457-.915 1.748-1.4 2.819-1.62a16.778 16.778 0 012.343-.33 25.04 25.04 0 014.385 0c.787.056 1.57.166 2.343.33 1.07.22 2.361.659 2.82 1.62a2.27 2.27 0 010 1.95c-.459.96-1.75 1.4-2.82 1.61-.772.172-1.555.286-2.343.34-1.188.1-2.38.118-3.57.054-.275 0-.54 0-.815-.055a15.417 15.417 0 01-2.334-.338c-1.08-.21-2.361-.65-2.828-1.611A2.28 2.28 0 014 18.7z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+
+      <!-- <div class="fixed inset-0 h-full w-full"></div> -->
+      <!-- <div class="absolute right-0 mt-2 w-56 bg-white rounded-xl overflow-hidden shadow-md dark:bg-gray-800">
+        <button class="w-full flex px-4 py-2 space-x-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700 focus:outline-none dark:text-gray-100 dark:hover:bg-gray-700">
+          <svg class="w-6 h-6 stroke-current" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.813 12.022H3.77M12.885 9.106l2.928 2.916-2.928 2.916" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M8.504 7.389v-.933a3.684 3.684 0 013.685-3.684h4.884a3.675 3.675 0 013.675 3.675v11.14a3.685 3.685 0 01-3.685 3.685h-4.885a3.675 3.675 0 01-3.674-3.675v-.942" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span>Create Account</span>
+        </button>
+        <button class="w-full flex px-4 py-2 space-x-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700 focus:outline-none dark:text-gray-100 dark:hover:bg-gray-700">
+          <svg class="w-6 h-6 stroke-current" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11.579" cy="7.278" r="4.778" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path clip-rule="evenodd" d="M4 18.701a2.215 2.215 0 01.22-.97c.457-.915 1.748-1.4 2.819-1.62a16.778 16.778 0 012.343-.33 25.04 25.04 0 014.385 0c.787.056 1.57.166 2.343.33 1.07.22 2.361.659 2.82 1.62a2.27 2.27 0 010 1.95c-.459.96-1.75 1.4-2.82 1.61-.772.172-1.555.286-2.343.34-1.188.1-2.38.118-3.57.054-.275 0-.54 0-.815-.055a15.417 15.417 0 01-2.334-.338c-1.08-.21-2.361-.65-2.828-1.611A2.28 2.28 0 014 18.7z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span>Sign In</span>
+        </button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="hidden xl:flex xl:items-center">
+    <form class="flex">
+      <div class="flex items-center w-40 h-10 space-x-2 px-4 py-2 bg-gray-100 border-l-2 transition rounded-2xl cursor-pointer dark:bg-gray-800 dark:border-gray-600">
+        <svg class="w-6 h-6 text-primary-dark stroke-current stroke-2 cursor-pointer dark:text-primary-default" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path clip-rule="evenodd" d="M4.24 10.391a7.678 7.678 0 1115.356.053v.086c-.052 2.757-1.592 5.305-3.479 7.296a20.187 20.187 0 01-3.59 2.957.93.93 0 01-1.218 0 19.819 19.819 0 01-5.052-4.73 9.826 9.826 0 01-2.018-5.636v-.026z" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="11.917" cy="10.539" r="2.461" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <input class="w-20 h-full tracking-wide text-primary-dark bg-transparent focus:outline-none placeholder-gray-400 cursor-pointer dark:text-primary-default" type="text" value="Larache" disabled />
+      </div>
+
+      <div class="flex items-center w-80 h-10 space-x-4 px-4 py-2 text-gray-400 bg-gray-100 border-l-4 border-r-2 focus-within:border-transparent focus-within:text-gray-500 focus-within:ring-2 focus-within:ring-gray-400 transition transform -translate-x-6 rounded-2xl dark:focus:text-gray-300 dark:bg-gray-800 dark:border-gray-600 dark:focus-within:border-transparent dark:focus-within:text-gray-400 dark:focus-within:ring-gray-400">
+        <svg class="w-6 h-5 text-current stroke-current" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.667 16.667a7.5 7.5 0 100-15 7.5 7.5 0 000 15zM18.833 18.333L15.5 15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <input class="w-full h-full tracking-wide bg-transparent text-gray-700 focus:outline-none placeholder-gray-400 dark:text-gray-50" type="text" placeholder="Search.." />
+      </div>
+    </form>
+
+    <button class="w-16 h-10 flex items-center justify-center group border-2 border-gray-200 focus:outline-none focus:border-4 focus:border-gray-300 focus-visible:border-gray-300 focus-visible:ring-1 focus-visible:ring-gray-300 transition duration-300 transform -translate-x-4 rounded-2xl dark:border-gray-600 dark:focus:border-gray-500 dark:focus-visible:border-gray-500">
+      <svg class="w-6 h-5 text-gray-600 stroke-current dark:text-gray-100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.931 14.989H2.903" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path clip-rule="evenodd" d="M18.098 14.989a2.4 2.4 0 11-4.8 0 2.4 2.4 0 014.8 0z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M12.069 5.218h6.03" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path clip-rule="evenodd" d="M2.902 5.218a2.4 2.4 0 104.799.002 2.4 2.4 0 00-4.799-.002z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+  </div>
+
+  <div class="hidden md:flex space-x-3">
+    <button class="px-8 py-2 text-sm font-semibold tracking-wider text-white bg-primary-default shadow rounded-2xl transition duration-300 border-0 hover:bg-primary-dark focus:outline-none focus-visible:ring focus-visible:ring-primary-light active:bg-primary-default">Create Account</button>
+    <button class="px-8 py-2 text-sm font-semibold tracking-wider text-primary-default shadow border-2 border-primary-default rounded-2xl transition duration-300 hover:text-primary-dark hover:border-primary-dark active:text-primary-default active:border-primary-default focus:outline-none focus-visible:ring focus-visible:ring-primary-light">Sign In</button>
+  </div>
+
+  <!-- 
+    <button class="h-11 relative flex items-center group border-2 border-l-0 border-gray-200 focus:outline-none focus:border-4 focus:border-gray-300 focus-visible:border-gray-300 focus-visible:ring-1 focus-visible:ring-gray-300 transition duration-300 rounded-2xl dark:border-gray-600 dark:focus:border-gray-500 dark:focus-visible:border-gray-500">
+    <img class="w-10 h-full transform scale-105 object-cover rounded-2xl" src="https://mir-s3-cdn-cf.behance.net/projects/404/2dddad80086231.Y3JvcCwzMDAwLDIzNDYsMCw0MDg.jpg" alt="Your avatar">
+    <span class="px-3 text-sm text-gray-700 dark:text-gray-100">Suzy Bae</span>
+  </button> -->
+</header>
+
+<main class="font-body text-gray-700 2xl:container 2xl:mx-auto my-8 px-4 md:px-6">
+ 
+</main>
+</body>
+
+</html>
