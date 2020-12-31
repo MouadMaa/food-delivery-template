@@ -31,14 +31,13 @@ module.exports = {
 	},
 	variants: {
 		extend: {
+			textColor: [ 'active' ],
+			backgroundColor: [ 'active' ],
+			width: [ 'group-hover' ],
+			borderColor: [ 'focus-visible', 'active' ],
 			ringWidth: [ 'focus-visible' ],
 			ringColor: [ 'focus-visible' ],
-			borderColor: [ 'focus-visible' ],
 		},
-		width: [ 'responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus' ],
-		backgroundColor: [ 'responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus', 'active' ],
-		textColor: [ 'responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus', 'active' ],
-		borderColor: [ 'responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus', 'active' ],
 	},
 	plugins: [],
 }
