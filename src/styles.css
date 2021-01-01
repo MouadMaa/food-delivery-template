@@ -3,7 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .modal {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(218, 218, 218, 0.3);  
+  }
+}
 @layer base {
   /* Scroll bar style */
 
