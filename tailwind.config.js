@@ -37,9 +37,8 @@ module.exports = {
 			borderColor: [ 'focus-visible', 'active' ],
 			ringWidth: [ 'focus-visible' ],
 			ringColor: [ 'focus-visible' ],
+			scale: [ 'group-hover' ],
 		},
 	},
-	plugins: [
-		require('@tailwindcss/custom-forms'),
-	],
+	plugins: [ require('@tailwindcss/custom-forms') ],
 }
