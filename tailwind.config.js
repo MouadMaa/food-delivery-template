@@ -39,5 +39,7 @@ module.exports = {
 			ringColor: [ 'focus-visible' ],
 		},
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/custom-forms'),
+	],
 }
