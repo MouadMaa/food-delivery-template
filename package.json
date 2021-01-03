@@ -4,12 +4,12 @@
 	"main": "index.js",
 	"license": "MIT",
 	"scripts": {
-		"build": "yarn tailwindcss build src/styles.css -o public/compiled.css",
+		"build": "yarn tailwindcss build css/tailwind.css -o build/tailwind.css",
 		"dev": "yarn live-server public"
 	},
 	"dependencies": {
 		"autoprefixer": "^10.1.0",
-		"postcss": "^8.2.1",
+		"postcss": "^8.2.2",
 		"tailwindcss": "^2.0.2"
 	},
 	"devDependencies": {

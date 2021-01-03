@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const customForms = require('@tailwindcss/custom-forms')
 
 module.exports = {
 	purge: [],
@@ -41,5 +42,5 @@ module.exports = {
 			scale: [ 'group-hover' ],
 		},
 	},
-	plugins: [ require('@tailwindcss/custom-forms') ],
+	plugins: [ customForms ],
 }
