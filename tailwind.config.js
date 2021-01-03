@@ -34,6 +34,7 @@ module.exports = {
 			textColor: [ 'active' ],
 			backgroundColor: [ 'active' ],
 			width: [ 'group-hover' ],
+			height: [ 'group-hover' ],
 			borderColor: [ 'focus-visible', 'active' ],
 			ringWidth: [ 'focus-visible' ],
 			ringColor: [ 'focus-visible' ],
