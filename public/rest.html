@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="">
 
 <head>
   <meta charset="UTF-8">
@@ -89,17 +89,14 @@
   </header>
 
   <!---------------------------------------------------------------------- Main ---------------------------------------------------------------------->
-  <main class="font-body text-gray-700 2xl:container 2xl:mx-auto px-3 md:px-6">
-
-    <!---------------------------------------------------------------------- Section Restaurant ---------------------------------------------------------------------->
+  <main class="font-body text-gray-700 2xl:container 2xl:mx-auto px-2 md:px-6">
     <section class="grid grid-cols-1">
       <!---------------------------------------------------------------------- Section Foods ---------------------------------------------------------------------->
       <section class="overflow-x-hidden">
-        <!-- Restaurant Details -->
-        <article class="relative h-52">
+      <!---------------------------------------------------------------------- Restaurant Details ---------------------------------------------------------------------->
+        <section class="relative h-52">
           <!-- Image Cover -->
           <img class="absolute h-full w-full object-cover" src="https://www.thestatesman.com/wp-content/uploads/2018/10/mcdonalds-burger.jpg" alt="pizza hut">
-          <img class="absolute h-full w-full object-cover" src="./assets/shadow.png" alt="shadow">
           <div class="absolute inset-y-4 inset-x-6 flex justify-between items-end">
             <div class="flex-grow">
               <!-- Title -->
@@ -127,9 +124,9 @@
               </svg>
             </button>
           </div>
-        </article>
+        </section>
 
-        <!---------------------------------------------------------------------- Section Restaurant Categories ---------------------------------------------------------------------->
+        <!---------------------------------------------------------------------- Section Categories ---------------------------------------------------------------------->
         <section class="relative mt-2 sm:mt-4">
           <!-- Previous Button -->
           <!-- <button class="absolute top-0 left-0 flex flex-row-reverse w-14 h-full group focus:outline-none">
@@ -145,7 +142,7 @@
 
           <!-- Restaurant Categories -->
           <nav class="flex text-sm text-gray-600">
-            <a class="px-4 py-2 tracking-wider leading-none whitespace-nowrap border-b-2 text-primary-default bg-primary-background border-primary-light rounded-t transition-colors duration-300 dark:bg-gray-800 dark:border-primary-default">STEP 1</a>
+            <a class="px-4 py-2 tracking-wider leading-none whitespace-nowrap border-b-2 text-primary-default bg-primary-background border-primary-light rounded-t transition-colors duration-300 dark:bg-transparent dark:border-primary-default">STEP 1</a>
             <a class="px-4 py-2 tracking-wider leading-none whitespace-nowrap border-b-2 border-gray-200 transition-colors duration-300 hover:border-primary-light dark:text-gray-300 dark:border-gray-600 dark:hover:border-primary-default">STEP 2</a>
             <a class="px-4 py-2 tracking-wider leading-none whitespace-nowrap border-b-2 border-gray-200 transition-colors duration-300 hover:border-primary-light dark:text-gray-300 dark:border-gray-600 dark:hover:border-primary-default">STEP 3</a>
             <a class="px-4 py-2 tracking-wider leading-none whitespace-nowrap border-b-2 border-gray-200 transition-colors duration-300 hover:border-primary-light dark:text-gray-300 dark:border-gray-600 dark:hover:border-primary-default">STEP 4</a>
@@ -161,7 +158,7 @@
           <button class="absolute top-0 right-0 flex w-14 h-full group focus:outline-none">
             <div class="w-2/6 h-full bg-gradient-to-r from-transparent to-white dark:to-gray-900"></div>
             <div class="flex items-center justify-end w-full h-full bg-white dark:bg-gray-900">
-              <div class="flex items-center justify-center w-8 h-8 mr-2 rounded-full transition duration-300 group-hover:bg-gray-200 dark:group-hover:bg-gray-700">
+              <div class="flex items-center justify-center w-8 h-8 rounded-full transition duration-300 group-hover:bg-gray-200 dark:group-hover:bg-gray-700">
                 <svg class="w-4 h-4 text-gray-600 stroke-current dark:text-gray-100" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.667 3.333L10.333 8l-4.666 4.667" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
@@ -169,13 +166,125 @@
             </div>
           </button>
         </section>
+
+        <!---------------------------------------------------------------------- Section Foods By Category ---------------------------------------------------------------------->
+        <section class="flex flex-col my-6">
+          <!-- Category -->
+          <h3 class="text-md font-semibold tracking-wider text-gray-600 mb-4 dark:text-gray-100">Most Popular</h3>
+
+          <div class="space-y-8">
+            <!-- Card Food -->
+            <article class="flex items-center w-full h-28 sm:h-32 border-2 border-gray-200 group shadow-sm rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow dark:border-gray-600">
+              <picture class="relative h-full w-56 overflow-hidden">
+                <img class="absolute h-full w-full object-cover duration-500 transform group-hover:scale-105" src="https://www.thedailymeal.com/sites/default/files/story/2016/PROMO_Mcdonalds-value_0.jpg" alt="mcdonalds burger">
+              </picture>
+              <div class="my-1 mx-3 md:mx-6">
+                <div class="flex items-start justify-between flex-col sm:flex-row my-1 sm:mb-2 space-y-2 sm:space-y-0">
+                  <h2 class="text-sm text-gray-700 sm:text-md font-semibold tracking-wide dark:text-gray-50">Big Chicken Sauce Moroccan</h2>
+                  <span class="text-sm text-primary-default">72.00 DHS</span>
+                </div>
+                <p class="hidden sm:inline-block text-sm text-gray-600 dark:text-gray-200">The big chicken Algerian sauce is a crispy chicken fillet, Emmental, fresh onions, fresh salad, all seasoned with the famous and delicious Moroccan</p>
+              </div>
+            </article>
+
+            <article class="flex items-center w-full h-28 sm:h-32 border-2 border-gray-200 group shadow-sm rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow dark:border-gray-600">
+              <picture class="relative h-full w-56 overflow-hidden">
+                <img class="absolute h-full w-full object-cover duration-500 transform group-hover:scale-105" src="https://www.thedailymeal.com/sites/default/files/story/2016/PROMO_Mcdonalds-value_0.jpg" alt="mcdonalds burger">
+              </picture>
+              <div class="my-1 mx-3 md:mx-6">
+                <div class="flex items-start justify-between flex-col sm:flex-row my-1 sm:mb-2 space-y-2 sm:space-y-0">
+                  <h2 class="text-sm text-gray-700 sm:text-md font-semibold tracking-wide dark:text-gray-50">Big Chicken Sauce Moroccan</h2>
+                  <span class="text-sm text-primary-default">72.00 DHS</span>
+                </div>
+                <p class="hidden sm:inline-block text-sm text-gray-600 dark:text-gray-200">The big chicken Algerian sauce is a crispy chicken fillet, Emmental, fresh onions, fresh salad, all seasoned with the famous and delicious Moroccan</p>
+              </div>
+            </article>
+
+            <article class="flex items-center w-full h-28 sm:h-32 border-2 border-gray-200 group shadow-sm rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow dark:border-gray-600">
+              <picture class="relative h-full w-56 overflow-hidden">
+                <img class="absolute h-full w-full object-cover duration-500 transform group-hover:scale-105" src="https://www.thedailymeal.com/sites/default/files/story/2016/PROMO_Mcdonalds-value_0.jpg" alt="mcdonalds burger">
+              </picture>
+              <div class="my-1 mx-3 md:mx-6">
+                <div class="flex items-start justify-between flex-col sm:flex-row my-1 sm:mb-2 space-y-2 sm:space-y-0">
+                  <h2 class="text-sm text-gray-700 sm:text-md font-semibold tracking-wide dark:text-gray-50">Big Chicken Sauce Moroccan</h2>
+                  <span class="text-sm text-primary-default">72.00 DHS</span>
+                </div>
+                <p class="hidden sm:inline-block text-sm text-gray-600 dark:text-gray-200">The big chicken Algerian sauce is a crispy chicken fillet, Emmental, fresh onions, fresh salad, all seasoned with the famous and delicious Moroccan</p>
+              </div>
+            </article>
+
+            <article class="flex items-center w-full h-28 sm:h-32 border-2 border-gray-200 group shadow-sm rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow dark:border-gray-600">
+              <picture class="relative h-full w-56 overflow-hidden">
+                <img class="absolute h-full w-full object-cover duration-500 transform group-hover:scale-105" src="https://www.thedailymeal.com/sites/default/files/story/2016/PROMO_Mcdonalds-value_0.jpg" alt="mcdonalds burger">
+              </picture>
+              <div class="my-1 mx-3 md:mx-6">
+                <div class="flex items-start justify-between flex-col sm:flex-row my-1 sm:mb-2 space-y-2 sm:space-y-0">
+                  <h2 class="text-sm text-gray-700 sm:text-md font-semibold tracking-wide dark:text-gray-50">Big Chicken Sauce Moroccan</h2>
+                  <span class="text-sm text-primary-default">72.00 DHS</span>
+                </div>
+                <p class="hidden sm:inline-block text-sm text-gray-600 dark:text-gray-200">The big chicken Algerian sauce is a crispy chicken fillet, Emmental, fresh onions, fresh salad, all seasoned with the famous and delicious Moroccan</p>
+              </div>
+            </article>
+
+            <article class="flex items-center w-full h-28 sm:h-32 border-2 border-gray-200 group shadow-sm rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow dark:border-gray-600">
+              <picture class="relative h-full w-56 overflow-hidden">
+                <img class="absolute h-full w-full object-cover duration-500 transform group-hover:scale-105" src="https://www.thedailymeal.com/sites/default/files/story/2016/PROMO_Mcdonalds-value_0.jpg" alt="mcdonalds burger">
+              </picture>
+              <div class="my-1 mx-3 md:mx-6">
+                <div class="flex items-start justify-between flex-col sm:flex-row my-1 sm:mb-2 space-y-2 sm:space-y-0">
+                  <h2 class="text-sm text-gray-700 sm:text-md font-semibold tracking-wide dark:text-gray-50">Big Chicken Sauce Moroccan</h2>
+                  <span class="text-sm text-primary-default">72.00 DHS</span>
+                </div>
+                <p class="hidden sm:inline-block text-sm text-gray-600 dark:text-gray-200">The big chicken Algerian sauce is a crispy chicken fillet, Emmental, fresh onions, fresh salad, all seasoned with the famous and delicious Moroccan</p>
+              </div>
+            </article>
+
+            <article class="flex items-center w-full h-28 sm:h-32 border-2 border-gray-200 group shadow-sm rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow dark:border-gray-600">
+              <picture class="relative h-full w-56 overflow-hidden">
+                <img class="absolute h-full w-full object-cover duration-500 transform group-hover:scale-105" src="https://www.thedailymeal.com/sites/default/files/story/2016/PROMO_Mcdonalds-value_0.jpg" alt="mcdonalds burger">
+              </picture>
+              <div class="my-1 mx-3 md:mx-6">
+                <div class="flex items-start justify-between flex-col sm:flex-row my-1 sm:mb-2 space-y-2 sm:space-y-0">
+                  <h2 class="text-sm text-gray-700 sm:text-md font-semibold tracking-wide dark:text-gray-50">Big Chicken Sauce Moroccan</h2>
+                  <span class="text-sm text-primary-default">72.00 DHS</span>
+                </div>
+                <p class="hidden sm:inline-block text-sm text-gray-600 dark:text-gray-200">The big chicken Algerian sauce is a crispy chicken fillet, Emmental, fresh onions, fresh salad, all seasoned with the famous and delicious Moroccan</p>
+              </div>
+            </article>
+
+            <article class="flex items-center w-full h-28 sm:h-32 border-2 border-gray-200 group shadow-sm rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow dark:border-gray-600">
+              <picture class="relative h-full w-56 overflow-hidden">
+                <img class="absolute h-full w-full object-cover duration-500 transform group-hover:scale-105" src="https://www.thedailymeal.com/sites/default/files/story/2016/PROMO_Mcdonalds-value_0.jpg" alt="mcdonalds burger">
+              </picture>
+              <div class="my-1 mx-3 md:mx-6">
+                <div class="flex items-start justify-between flex-col sm:flex-row my-1 sm:mb-2 space-y-2 sm:space-y-0">
+                  <h2 class="text-sm text-gray-700 sm:text-md font-semibold tracking-wide dark:text-gray-50">Big Chicken Sauce Moroccan</h2>
+                  <span class="text-sm text-primary-default">72.00 DHS</span>
+                </div>
+                <p class="hidden sm:inline-block text-sm text-gray-600 dark:text-gray-200">The big chicken Algerian sauce is a crispy chicken fillet, Emmental, fresh onions, fresh salad, all seasoned with the famous and delicious Moroccan</p>
+              </div>
+            </article>
+
+            <article class="flex items-center w-full h-28 sm:h-32 border-2 border-gray-200 group shadow-sm rounded-lg overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow dark:border-gray-600">
+              <picture class="relative h-full w-56 overflow-hidden">
+                <img class="absolute h-full w-full object-cover duration-500 transform group-hover:scale-105" src="https://www.thedailymeal.com/sites/default/files/story/2016/PROMO_Mcdonalds-value_0.jpg" alt="mcdonalds burger">
+              </picture>
+              <div class="my-1 mx-3 md:mx-6">
+                <div class="flex items-start justify-between flex-col sm:flex-row my-1 sm:mb-2 space-y-2 sm:space-y-0">
+                  <h2 class="text-sm text-gray-700 sm:text-md font-semibold tracking-wide dark:text-gray-50">Big Chicken Sauce Moroccan</h2>
+                  <span class="text-sm text-primary-default">72.00 DHS</span>
+                </div>
+                <p class="hidden sm:inline-block text-sm text-gray-600 dark:text-gray-200">The big chicken Algerian sauce is a crispy chicken fillet, Emmental, fresh onions, fresh salad, all seasoned with the famous and delicious Moroccan</p>
+              </div>
+            </article>
+          </div>
+        </section>
       </section>
 
       <!---------------------------------------------------------------------- Section Orders ---------------------------------------------------------------------->
       <aside class="bg-gray-300">
       </aside>
     </section>
-
   </main>
 </body>
 

@@ -4,7 +4,7 @@
 	"main": "index.js",
 	"license": "MIT",
 	"scripts": {
-		"build": "yarn tailwindcss build css/tailwind.css -o build/tailwind.css",
+		"build": "yarn tailwindcss build styles/tailwind.css -o build/tailwind.css",
 		"dev": "yarn live-server public"
 	},
 	"dependencies": {
