@@ -382,8 +382,8 @@
         </div>
 
         <!-- Button Order -->
-        <div class="flex flex-col sm:flex-row items-center justify-between text-sm space-x-0 lg:space-x-6 space-y-6 sm:space-y-0">
-          <div class="flex flex-row-reverse sm:flex-col justify-between w-full lg:w-auto lg:min-w-max -mt-4 sm:-mt-0">
+        <div class="flex flex-col sm:flex-row items-center justify-between space-x-0 sm:space-x-6 space-y-6 sm:space-y-0 text-sm">
+          <div class="flex flex-row-reverse sm:flex-col justify-between whitespace-nowrap w-full sm:w-auto">
             <span class="text-primary-default font-semibold">297.00 DHS</span>
             <span class="text-gray-600 dark:text-gray-200">Total Price</span>
           </div>
@@ -395,6 +395,89 @@
           </button>
         </div>
       </aside>
+    </section>
+
+    <!---------------------------------------------------------------------- Section Modal Food ---------------------------------------------------------------------->
+    <section class="font-body text-gray-700 dark:text-gray-50 modal absolute inset-0 z-10 flex items-center justify-center">
+      <article class="max-w-2xl w-full m-2 shadow-lg rounded-3xl overflow-hidden">
+        <picture class="relative block h-48">
+          <img class="absolute h-full w-full object-cover" src="https://www.thedailymeal.com/sites/default/files/story/2016/PROMO_Mcdonalds-value_0.jpg" alt="mcdonalds burger" />
+          <button class="absolute top-2 right-2 flex items-center justify-center w-10 h-10 bg-gray-100 rounded-2xl transition duration-300 focus:outline-none focus-visible:ring focus-visible:ring-primary-light active:bg-gray-200">
+            <svg class="w-3.5 h-3.5 text-gray-500 fill-current" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="17.9988" height="1.79988" rx="0.89994" transform="matrix(0.707097 0.707116 -0.707097 0.707116 1.27271 3.05176e-05)" />
+              <path d="M13.3637 0.636373C13.7151 0.987826 13.7151 1.55764 13.3637 1.9091L1.90944 13.3636C1.55799 13.7151 0.988189 13.7151 0.636745 13.3636C0.285301 13.0122 0.285302 12.4423 0.636745 12.0909L12.091 0.636374C12.4424 0.284921 13.0122 0.28492 13.3637 0.636373Z" />
+            </svg>
+          </button>
+        </picture>
+        <div class="relative bg-white h-full -mt-6 p-6 rounded-3xl dark:bg-gray-900">
+          <!-- Food Details -->
+          <div class="flex items-center justify-between">
+            <div class="space-y-1">
+              <p class="text-primary-default">35.00 DHS</p>
+              <h3 class="text-lg md:text-xl font-semibold tracking-wider dark:text-gray-200">Small Pepperoni Moroccan</h3>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-x-3 text-md md:text-lg">
+              <button class="flex items-center justify-center w-6 h-6 text-gray-400 bg-gray-200 rounded-full transition-colors duration-300 focus:outline-none focus-visible:ring-1 focus-visible:ring-gray-300 active:bg-gray-300 dark:bg-gray-600 dark:focus-visible:border-gray-500 dark:active:bg-gray-500">-</button>
+              <span class="text-sm md:text-md text-gray-600 dark:text-gray-200">1</span>
+              <button class="flex items-center justify-center w-6 h-6 text-gray-400 bg-gray-200 rounded-full transition-colors duration-300 focus:outline-none focus-visible:ring-1 focus-visible:ring-gray-300 active:bg-gray-300 dark:bg-gray-600 dark:focus-visible:border-gray-500 dark:active:bg-gray-500">+</button>
+            </div>
+          </div>
+          <!-- Food Description -->
+          <p class="text-xs sm:text-sm mt-1 mb-2">The Classic. Tomato sauce and mozzarella, topped with delicious pepperoni. Contains dairy, gluten, and nightshades.</p>
+          <!-- Chooses With Food -->
+          <div class="my-4 py-4 px-2 space-y-6 border-t-2 border-b-2 border-gray-200 border-dashed overflow-y-auto dark:border-gray-600">
+            <div class="space-y-2">
+              <h4 class="text-sm sm:text-md font-semibold text-gray-600 dark:text-gray-200">How would you like your fries ?</h4>
+              <div class="text-sm space-y-2">
+                <div class="flex items-center justify-between">
+                  <div class="space-x-2">
+                    <input class="form-radio h-5 w-5 text-primary-default bg-gray-200 cursor-pointer dark:bg-gray-400 dark:text-primary-default" id="radio1" name="group1" type="radio">
+                    <label class="text-sm text-gray-700 cursor-pointer dark:text-gray-50" for="radio1">Fries</label>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="space-x-2">
+                    <input class="form-radio h-5 w-5 text-primary-default bg-gray-200 cursor-pointer dark:bg-gray-400" id="radio2" name="group1" type="radio">
+                    <label class="text-sm text-gray-700 cursor-pointer dark:text-gray-50" for="radio2">Steak house</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-2">
+              <h4 class="text-sm sm:text-md font-semibold text-gray-600 dark:text-gray-200">How would you like your fries ?</h4>
+              <div class="text-sm space-y-2">
+                <div class="flex items-center justify-between">
+                  <div class="space-x-2">
+                    <input class="form-checkbox h-5 w-5 text-primary-default bg-gray-200 cursor-pointer dark:bg-gray-400" id="checkbox1" type="checkbox">
+                    <label class="text-sm text-gray-700 cursor-pointer dark:text-gray-50" for="checkbox1">Fries</label>
+                  </div>
+                  <span class="text-primary-default">35.00 DHS</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="space-x-2">
+                    <input class="form-checkbox h-5 w-5 text-primary-default bg-gray-200 cursor-pointer dark:bg-gray-400" id="checkbox2" type="checkbox">
+                    <label class="text-sm text-gray-700 cursor-pointer dark:text-gray-50" for="checkbox2">Steak house</label>
+                  </div>
+                  <span class="text-primary-default">36.50 DHS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Button & Price -->
+          <div class="flex flex-col sm:flex-row items-center justify-between mt-4 space-x-0 sm:space-x-6 space-y-6 sm:space-y-0 text-sm">
+            <div class="flex flex-row-reverse sm:flex-col justify-between whitespace-nowrap w-full sm:w-auto">
+              <span class="text-gray-600 dark:text-gray-200">Price</span>
+              <span class="text-primary-default font-semibold">35.00 DHS</span>
+            </div>
+            <button class="flex items-center justify-center w-full space-x-2 px-6 py-2 tracking-wider text-white bg-primary-default shadow rounded-l-full transition duration-300 border-0 focus:outline-none focus-visible:ring focus-visible:ring-primary-light active:bg-primary-dark">
+              <span>Add To Order</span>
+              <svg class="w-6 h-6 fill-current" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.5 15.5L22 12l-3.5-3.5-.707.707 2.293 2.293H2v1h18.086l-2.293 2.293.707.707z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </article>
     </section>
   </main>
 </body>
